@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Задание 4</title>
+<meta charset="utf-8">
+</head>
+<body>
+	<h1>Password: MaximPOWER</h1>
+<script language="JavaScript" type="text/JavaScript">
+function sravn()
+{
+var x, y;
+x=parseInt(prompt("Введите значение х",''));
+y=parseInt(prompt("Введите значение у",'')); 
+if(x<y)
+{
+alert(" Максимальное число - y");
+}
+else if(x>y)
+{
+alert(" Максимальное число - x");
+}
+else
+{
+alert(" Числа равны!");
+}
+}
+function password()
+{
+var pass = "MaximPOWER";
+if(pass == prompt("Введите пароль: "))
+{
+	alert("Пароль введен верно!");
+}
+else
+{
+	alert("Пароль введен НЕ верно!");
+	password();
+}
+}
+
+sravn();
+setTimeout(password,1000);
+
+</script>
+<div>
+     	<a  href="Lab3.html"><button>Задание №3</button></a>
+     	<a href="Lab5.html"><button>Задание №5</button></a>
+     </div>
+</body>
+</html>
