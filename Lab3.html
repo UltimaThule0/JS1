@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<html lang="ru">
+<head>
+	<title>Задание 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+  
+<script type="text/javascript">
+       function put_ur_name(){
+        name = prompt("Введите сюда свое имя:");
+        urname  = "<div class='name'> Ваше имя "+name+"</div>";
+        document.body.innerHTML = urname;
+        }
+  function rename(){
+  if(confirm("Начать заново?")){
+
+  if(confirm("Не надоело?")){
+    put_ur_name();
+    setTimeout(rename,1000);
+  }
+  else {
+    alert("Ну и правильно!");
+  }
+}
+}
+put_ur_name();
+setTimeout(rename,11000);
+     </script>
+     <div>
+      <a  href="Lab2.html"><button>Задание №2</button></a>
+      <a href="Lab4.html"><button>Задание №4</button></a>
+     </div>
+
+</body>
+</html>
